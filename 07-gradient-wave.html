@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join our Telegram community for updates and information.">
+<meta name="theme-color" content="#080a18">
+<title>Gradient Wave | Telegram Community</title>
+<!--
+  META PIXEL CODE PLACEHOLDER — PASTE YOUR PIXEL CODE HERE LATER.
+  To add tracking later, paste the complete Meta Pixel base code from Meta
+  Events Manager between the START and END markers below (usually in <head>).
+  This file currently contains NO Meta Pixel code and sends NO Pixel events.
+  START META PIXEL CODE
+  END META PIXEL CODE
+-->
+<style>
+:root{--bg:#080a18;--card:#11142a;--text:#f8f7ff;--muted:#b6b8d7;--accent:#d75cff;--accent2:#168dff;--border:rgba(160,95,255,.35);--glow:rgba(125,70,255,.20)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 10% 0%, #31155b, transparent 45%), radial-gradient(ellipse at 90% 20%, #082f5b, transparent 45%), #080a18;background-color:var(--bg);color:var(--text);font-family:Arial, Helvetica, sans-serif;transition:none}
+.container{width:min(94%,960px);margin:auto}
+header{padding:21px 0}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:900;letter-spacing:.5px}
+.logo{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111111;font-size:23px;font-weight:900;overflow:hidden;box-shadow:0 0 22px var(--glow)}
+.logo img{width:100%;height:100%;object-fit:cover}
+.status{border:1px solid var(--border);border-radius:30px;padding:8px 11px;color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.7px;white-space:nowrap}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#36df93;margin-right:5px}
+.hero{text-align:center;padding:34px 0 25px}
+.profile{width:112px;height:112px;margin:0 auto 21px;padding:4px;border:1px solid var(--border);border-radius:30px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 32px var(--glow)}
+.profile img{width:100%;height:100%;object-fit:cover;border-radius:25px;background:var(--card);display:none}
+.profile-fallback{height:100%;display:grid;place-items:center;font-size:45px}
+.badge{display:inline-block;margin-bottom:20px;padding:10px 15px;border:1px solid var(--border);border-radius:30px;background:var(--card);color:var(--accent);font-size:10px;font-weight:800;letter-spacing:1.1px}
+h1{max-width:790px;margin:0 auto 17px;font-size:clamp(34px,7vw,61px);line-height:1.08;letter-spacing:-1px;font-weight:900}
+.accent{color:var(--accent)}
+.description{max-width:630px;margin:0 auto 24px;color:var(--muted);font-size:15px;line-height:1.8}
+.join{display:flex;align-items:center;justify-content:center;gap:12px;width:min(100%,390px);min-height:60px;margin:0 auto;padding:16px 20px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(120deg,var(--accent),var(--accent2));color:#101010;font-size:15px;font-weight:900;cursor:pointer;box-shadow:0 9px 30px var(--glow);transition:transform .2s}
+.join:hover{transform:translateY(-3px)}
+.join:active{transform:scale(.98)}
+.telegram{width:23px;height:23px;flex:none}
+.note{margin:13px auto 0;color:var(--muted);font-size:12px;line-height:1.7}
+.timer{max-width:390px;margin:22px auto 0;padding:17px 18px;border:1px solid var(--border);border-radius:15px;background:var(--card);text-align:left}
+.timer-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:11px;font-size:12px}
+.timer-top strong{color:var(--accent)}
+.track{height:8px;overflow:hidden;border-radius:20px;background:var(--bg);border:1px solid var(--border)}
+.fill{height:100%;width:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width 1s linear}
+.timer-help{margin-top:9px;color:var(--muted);font-size:11px;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px auto}
+.stat{padding:20px 8px;text-align:center;background:var(--card);border:1px solid var(--border);border-radius:15px}
+.stat strong{display:block;margin-bottom:7px;color:var(--accent);font-size:clamp(18px,4vw,27px)}
+.stat span{color:var(--muted);font-size:11px}
+.section{padding:30px 0}
+.section h2{text-align:center;margin-bottom:12px;font-size:clamp(26px,5vw,37px)}
+.intro{max-width:580px;margin:0 auto 26px;text-align:center;color:var(--muted);font-size:14px;line-height:1.8}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.feature{padding:23px;border:1px solid var(--border);border-radius:17px;background:var(--card);transition:transform .2s}
+.feature:hover{transform:translateY(-3px)}
+.feature-icon{display:grid;place-items:center;width:45px;height:45px;margin-bottom:14px;border-radius:13px;background:var(--bg);font-size:22px}
+.feature h3{margin-bottom:9px;font-size:16px}
+.feature p{color:var(--muted);font-size:13px;line-height:1.8}
+.cta{margin:35px auto;padding:30px 18px;text-align:center;border:1px solid var(--border);border-radius:21px;background:var(--card);box-shadow:0 12px 40px var(--glow)}
+.cta h2{margin-bottom:11px;font-size:clamp(25px,5vw,35px)}
+.cta p{margin-bottom:22px;color:var(--muted);font-size:14px;line-height:1.8}
+.ads{margin:22px auto 30px;padding:20px;text-align:center;border:1px solid var(--border);border-radius:16px;background:var(--card)}
+.ads-label{display:block;margin-bottom:12px;color:var(--muted);font-size:10px;letter-spacing:1.3px}
+.ads-link{display:inline-block;padding:12px 17px;border:1px solid var(--border);border-radius:10px;color:var(--accent);font-size:13px;font-weight:800;text-decoration:none}
+.disclaimer{margin:0 auto 30px;padding:18px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.disclaimer h3{margin-bottom:8px;font-size:14px}
+.disclaimer p{color:var(--muted);font-size:12px;line-height:1.8}
+footer{padding:24px 0 32px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:11px;line-height:2}
+@media(max-width:600px){.container{width:94%}header{padding:15px 0}.brand{font-size:11px}.logo{width:37px;height:37px}.status{font-size:9px;padding:7px 8px}.hero{padding-top:25px}.description{font-size:14px}.stats{gap:7px}.stat{padding:16px 5px}.stat span{font-size:10px}.features{grid-template-columns:1fr}.feature{padding:20px}.cta{padding:25px 14px}.join{font-size:14px;min-height:57px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="container header">
+  <div class="brand"><div class="logo" id="brandLogo"><span id="logoLetter">〰</span></div><span id="brandName">GODFATHER COMMUNITY</span></div>
+  <div class="status"><span class="dot"></span> TELEGRAM COMMUNITY</div>
+</div></header>
+<main>
+<section class="hero container">
+  <div class="profile"><img id="profilePhoto" alt="Profile photo"><div class="profile-fallback" id="profileFallback">〰</div></div>
+  <div class="badge">✦ GRADIENT WAVE · TELEGRAM COMMUNITY</div>
+  <h1 id="heroTitle">Join Our <span class="accent">Telegram Community</span></h1>
+  <p class="description" id="heroDescription">Get community updates and information directly through our Telegram channel.</p>
+  <button class="join" id="joinButton" type="button">
+    <svg class="telegram" viewBox="0 0 24 24" aria-label="Telegram logo"><path fill="currentColor" d="M21.8 4.2 18.5 20c-.25 1.12-.9 1.4-1.82.88l-5.03-3.7-2.43 2.34c-.27.27-.5.5-1.02.5l.36-5.12 9.32-8.42c.4-.36-.09-.56-.62-.2L5.74 13.45.78 11.9c-1.08-.34-1.1-1.08.23-1.6L20.4 2.75c.9-.33 1.69.22 1.4 1.45Z"/></svg>
+    <span class="join-label">Join Telegram Channel</span><span>→</span>
+  </button>
+  <p class="note" id="buttonNote">Tap Join to open Telegram, or wait for the countdown.</p>
+  <div class="timer" aria-live="polite">
+    <div class="timer-top"><span id="timerLabel">Opening Telegram in</span><strong><span id="countdown">10</span> seconds</strong></div>
+    <div class="track"><div class="fill" id="progressFill"></div></div>
+    <p class="timer-help" id="timerHelp">You can open the channel now or wait for the countdown to finish.</p>
+  </div>
+</section>
+<section class="container stats">
+  <div class="stat"><strong id="stat1">24/7</strong><span id="statLabel1">Community Access</span></div>
+  <div class="stat"><strong id="stat2">Updates</strong><span id="statLabel2">Channel Information</span></div>
+  <div class="stat"><strong id="stat3">Free</strong><span id="statLabel3">To Join</span></div>
+</section>
+<section class="section container">
+  <h2 id="featuresTitle">Welcome to Our Community</h2>
+  <p class="intro" id="featuresIntro">Connect with our Telegram channel for updates and information.</p>
+  <div class="features">
+    <article class="feature"><div class="feature-icon">📣</div><h3>Announcements</h3><p>Check the channel for announcements and information.</p></article>
+    <article class="feature"><div class="feature-icon">⚡</div><h3>Channel Updates</h3><p>See new posts and updates when they are published.</p></article>
+    <article class="feature"><div class="feature-icon">🔗</div><h3>Easy Access</h3><p>Open our Telegram channel directly from this page.</p></article>
+    <article class="feature"><div class="feature-icon">👥</div><h3>Community</h3><p>Stay connected with the community and its information.</p></article>
+  </div>
+</section>
+<section class="container"><div class="cta">
+  <h2>Ready to Join?</h2><p>Tap below to visit our Telegram channel.</p>
+  <button class="join" id="joinButtonBottom" type="button">
+    <svg class="telegram" viewBox="0 0 24 24" aria-label="Telegram logo"><path fill="currentColor" d="M21.8 4.2 18.5 20c-.25 1.12-.9 1.4-1.82.88l-5.03-3.7-2.43 2.34c-.27.27-.5.5-1.02.5l.36-5.12 9.32-8.42c.4-.36-.09-.56-.62-.2L5.74 13.45.78 11.9c-1.08-.34-1.1-1.08.23-1.6L20.4 2.75c.9-.33 1.69.22 1.4 1.45Z"/></svg>
+    <span class="join-label">Join Telegram Channel</span><span>→</span>
+  </button>
+</div></section>
+<section class="container"><div class="ads">
+  <span class="ads-label">WEBSITE MANAGEMENT &amp; SUPPORT</span>
+  <a class="ads-link" id="adsWorldsLink" href="https://t.me/YOUR_PERSONAL_USERNAME" target="_blank" rel="noopener noreferrer">Ads Manager by Ads Worlds ↗</a>
+</div></section>
+<section class="container disclaimer"><h3>Disclaimer</h3><p id="disclaimerText">This page is independently operated and is not affiliated with or endorsed by Telegram or Meta. Telegram is a third-party service. Information shared through the channel should be reviewed independently. This disclaimer does not guarantee advertising approval.</p></section>
+</main>
+<footer class="container"><p id="footerText">© 2026 Godfather Community. All rights reserved.</p><p>Telegram is a third-party service.</p></footer>
+
+<script>
+/* ==================== EDIT SETTINGS HERE ====================
+Change these values to customize this individual design.
+No theme auto-switching is used. No Join-click Pixel event is sent.
+============================================================= */
+const SETTINGS = {
+  telegramLink: "https://t.me/YOUR_CHANNEL",
+  personalTelegramLink: "https://t.me/YOUR_PERSONAL_USERNAME",
+  profileImageUrl: "",
+  pageTitle: "Gradient Wave | Telegram Community",
+  brandName: "GODFATHER COMMUNITY",
+  logoText: "〰",
+  heroTitleBefore: "Join Our ",
+  heroTitleHighlight: "Telegram Community",
+  heroDescription: "Get community updates and information directly through our Telegram channel.",
+  buttonText: "Join Telegram Channel",
+  buttonNote: "Tap Join to open Telegram, or wait for the countdown.",
+  footerText: "© 2026 Godfather Community. All rights reserved.",
+
+  redirectAfterSeconds: 10,
+  enableAutoRedirect: true
+};
+/* ================= END EDIT SETTINGS HERE ================= */
+
+document.title = SETTINGS.pageTitle;
+document.getElementById("brandName").textContent = SETTINGS.brandName;
+document.getElementById("logoLetter").textContent = SETTINGS.logoText;
+document.getElementById("profileFallback").textContent = SETTINGS.logoText;
+document.getElementById("heroDescription").textContent = SETTINGS.heroDescription;
+document.getElementById("buttonNote").textContent = SETTINGS.buttonNote;
+document.getElementById("footerText").textContent = SETTINGS.footerText;
+document.getElementById("adsWorldsLink").href = SETTINGS.personalTelegramLink;
+document.querySelectorAll(".join-label").forEach(el => el.textContent = SETTINGS.buttonText);
+document.getElementById("heroTitle").replaceChildren(
+  document.createTextNode(SETTINGS.heroTitleBefore),
+  Object.assign(document.createElement("span"), {className:"accent",textContent:SETTINGS.heroTitleHighlight})
+);
+
+/* Optional profile photo: use a public image URL, or leave blank. */
+if (SETTINGS.profileImageUrl.trim()) {
+  const photo = document.getElementById("profilePhoto");
+  photo.src = SETTINGS.profileImageUrl.trim();
+  photo.style.display = "block";
+  document.getElementById("profileFallback").style.display = "none";
+  photo.onerror = () => {
+    photo.style.display = "none";
+    document.getElementById("profileFallback").style.display = "grid";
+  };
+  const logo = document.getElementById("brandLogo");
+  logo.textContent = "";
+  const smallPhoto = document.createElement("img");
+  smallPhoto.src = SETTINGS.profileImageUrl.trim();
+  smallPhoto.alt = "Brand profile";
+  logo.appendChild(smallPhoto);
+}
+
+/*
+   META PIXEL — ADD LATER:
+   No Pixel code is installed in this file. No Pixel events fire from this page.
+   To add it later, paste the complete Meta Pixel base code from Meta Events
+   Manager into the META PIXEL CODE PLACEHOLDER inside <head>.
+   Do not install the same Pixel code more than once.
+*/
+
+/* Join buttons only navigate. No Pixel event is fired on click. */
+function getTelegramUrl(value) {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== "https:") return null;
+    if (!["t.me","telegram.me","telegram.dog"].includes(url.hostname.toLowerCase())) return null;
+    if (/YOUR_CHANNEL/i.test(url.pathname)) return null;
+    return url.href;
+  } catch (_) { return null; }
+}
+function openTelegram() {
+  const url = getTelegramUrl(SETTINGS.telegramLink);
+  if (!url) {
+    alert("Please add your real Telegram channel link in EDIT SETTINGS HERE.");
+    return false;
+  }
+  window.location.href = url;
+  return true;
+}
+document.getElementById("joinButton").addEventListener("click", openTelegram);
+document.getElementById("joinButtonBottom").addEventListener("click", openTelegram);
+
+/* Fixed single design: no automatic theme changing. */
+/* Countdown + progress bar. Redirects after the configured number of seconds. */
+const totalSeconds = Math.max(1, Math.floor(Number(SETTINGS.redirectAfterSeconds) || 10));
+let secondsLeft = totalSeconds;
+const countdown = document.getElementById("countdown");
+const progress = document.getElementById("progressFill");
+countdown.textContent = secondsLeft;
+progress.style.width = "100%";
+
+if (SETTINGS.enableAutoRedirect) {
+  const timer = setInterval(() => {
+    secondsLeft--;
+    countdown.textContent = Math.max(0, secondsLeft);
+    progress.style.width = (Math.max(0, secondsLeft) / totalSeconds * 100) + "%";
+    if (secondsLeft <= 0) {
+      clearInterval(timer);
+      openTelegram();
+    }
+  }, 1000);
+} else {
+  document.getElementById("timerLabel").textContent = "Automatic redirect is disabled";
+  document.getElementById("timerHelp").textContent = "Use the Join button whenever you are ready.";
+}
+
+/* IMPORTANT:
+   - No Meta Pixel code is installed in this file.
+   - No Pixel events fire when a Join button is clicked.
+   - A disclaimer cannot guarantee Meta ad approval.
+   - Check your destination, claims, consent requirements, and Meta policies.
+*/
+</script>
+</body>
+</html>
